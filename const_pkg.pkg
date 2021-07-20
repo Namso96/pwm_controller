@@ -1,0 +1,38 @@
+-- Engineer: Osman Ahmed
+-- 
+-- Create Date: 12.01.2021 20:50:15
+-- Design Name: 
+-- Module Name: Top_level - Behavioral
+-- Project Name: UART_LED_CONTROLLER
+-- Target Devices: XC7S50
+-- Discription: constants package for all command.
+
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+package const_pkg is 
+
+
+
+constant SET_COMMAND_LED : std_logic_vector (7 downto 0) := X"41"; 
+constant UNSET_COMMAND_LED : std_logic_vector (7 downto 0) := X"42"; 
+constant SET_PWM_COMMAND : std_logic_vector (7 downto 0) := X"43"; 
+
+
+constant INVALID_COMMAND : std_logic_vector (7 downto 0) := X"58"; 
+
+
+
+
+end package; 
